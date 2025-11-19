@@ -5,72 +5,95 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:layout_gravity="center">
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv1"
         android:text="Arman Ahmed"
-        android:textSize="25dp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_gravity="center"/>
+        android:textColor="#000000"
+        android:layout_marginTop="20dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12310287"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_gravity="center"/>
+        android:textColor="#000000"
+        android:layout_marginTop="4dp" />
+
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/formal"
         android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        />
+        android:padding="10dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Subject 1 :"
-        android:layout_marginTop="30dp"
-        />
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp" />
+
     <EditText
+        android:id="@+id/et1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et1"
-        android:hint="Marks 1 "/>
+        android:hint="Marks 1"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="21dp"
         android:text="Subject 2 :"
-        android:layout_marginTop="30dp"
-        />
+        android:textColor="#000000"
+        android:layout_marginTop="30dp" />
+
     <EditText
+        android:id="@+id/et2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et2"
-        android:hint="Marks 2 "/>
+        android:hint="Marks 2"
+        android:padding="12dp"
+        android:textColor="#000000"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Subject 3 :"
-        android:layout_marginTop="30dp"
-        />
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp" />
+
     <EditText
+        android:id="@+id/et3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et3"
-        android:hint="Marks 3 "/>
+        android:hint="Marks 3"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
     <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="Calculate CGPA"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center"
-        />
-
-
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"/>
 
 </LinearLayout>
